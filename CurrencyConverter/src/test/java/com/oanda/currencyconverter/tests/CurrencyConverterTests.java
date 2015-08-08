@@ -37,7 +37,7 @@ import com.oanda.tests.utils.ExcelUtils;
  * Test cases for the currency conversion page at
  * http://www.oanda.com/currency/converter/
  * 
- * @author sharanya
+ * @author sharanya Ciddu
  *
  */
 public class CurrencyConverterTests {
