@@ -1,4 +1,4 @@
-package com.oanda.currencyconverter.tests.pages;
+package com.oanda.currencyconverter.pages;
 
 import java.util.List;
 import java.util.NoSuchElementException;

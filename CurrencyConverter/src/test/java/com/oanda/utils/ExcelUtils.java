@@ -1,7 +1,7 @@
 /**
  * @author sharanya
  */
-package com.oanda.tests.utils;
+package com.oanda.utils;
 
 import java.io.FileInputStream;
 import java.io.IOException;

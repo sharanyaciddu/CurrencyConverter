@@ -1,7 +1,7 @@
 /**
  * @author sharanya
  */
-package com.oanda.currencyconverter.tests;
+package com.oanda.currencyconverter;
 
 import static org.junit.Assert.assertEquals;
 
@@ -30,8 +30,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
 
-import com.oanda.currencyconverter.tests.pages.CurrencyConverterPage;
-import com.oanda.tests.utils.ExcelUtils;
+import com.oanda.currencyconverter.pages.CurrencyConverterPage;
+import com.oanda.utils.ExcelUtils;
 
 /**
  * Test cases for the currency conversion page at
@@ -40,12 +40,12 @@ import com.oanda.tests.utils.ExcelUtils;
  * @author sharanya Ciddu
  *
  */
-public class CurrencyConverterTests {
+public class CurrencyConverterTest {
 	private static final String PROPERTIES_FILE = "resources/oanda.properties";
 	private static final String XLS_FILE = "resources/oanda.xls";
 	private static WebDriver driver;
 	private static String baseUrl;
-	private static CurrencyConverterPage currencyConverterPage;
+	private static com.oanda.currencyconverter.pages.CurrencyConverterPage currencyConverterPage;
 	private static Vector<CurrencyTestData> currencyConversionTestVector;
 
 	// Define ExcelSheet Columns
@@ -132,7 +132,7 @@ public class CurrencyConverterTests {
 				Assert.assertNotEquals("you get - " + t.getWantedCurrency(),
 						currencyConverterPage.getSellMyCurrencyGet());
 			} else {
-				// assert equal
+				// assert equalfsd
 				Assert.assertNotEquals("you get - " + t.getWantedCurrency(),
 						currencyConverterPage.getSellMyCurrencyGet());
 			}
