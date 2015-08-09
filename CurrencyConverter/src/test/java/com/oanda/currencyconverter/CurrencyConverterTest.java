@@ -133,7 +133,7 @@ public class CurrencyConverterTest {
 						currencyConverterPage.getSellMyCurrencyGet());
 			} else {
 				// assert equalfsd
-				Assert.assertNotEquals("you get - " + t.getWantedCurrency(),
+				Assert.assertEquals("you get - " + t.getWantedCurrency(),
 						currencyConverterPage.getSellMyCurrencyGet());
 			}
 		}
