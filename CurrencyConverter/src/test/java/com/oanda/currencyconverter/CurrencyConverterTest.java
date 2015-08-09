@@ -116,11 +116,6 @@ public class CurrencyConverterTest {
 		System.out.println("tearDown");
 		driver.quit();
 	}
-	
-	@Before
-	public void navigateToPage() {
-		driver.navigate().to(baseUrl + CurrencyConverterPage.URL);
-	}
 
 	@Test
 	public void testCurrencyConversions() throws InterruptedException,
@@ -155,6 +150,7 @@ public class CurrencyConverterTest {
 	@Test
 	public void testSellAmountLessThanBuy() throws InterruptedException,
 			IOException {
+		driver.navigate().to(baseUrl + CurrencyConverterPage.URL);
 		currencyConverterPage.setCurrencyIHave("USD");
 		currencyConverterPage.setCurrencyIWant("EUR");
 
