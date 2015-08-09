@@ -18,6 +18,7 @@ import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.ss.usermodel.Cell;
 import org.junit.AfterClass;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.Test;
@@ -114,6 +115,11 @@ public class CurrencyConverterTest {
 	public static void tearDown() throws Exception {
 		System.out.println("tearDown");
 		driver.quit();
+	}
+	
+	@Before
+	public void navigateToPage() {
+		driver.navigate().to(baseUrl + CurrencyConverterPage.URL);
 	}
 
 	@Test
