@@ -132,7 +132,8 @@ public class CurrencyConverterTests {
 				Assert.assertNotEquals("you get - " + t.getWantedCurrency(),
 						currencyConverterPage.getSellMyCurrencyGet());
 			} else {
-				assertEquals("you get - " + t.getWantedCurrency(),
+				// assert equal
+				Assert.assertNotEquals("you get - " + t.getWantedCurrency(),
 						currencyConverterPage.getSellMyCurrencyGet());
 			}
 		}
